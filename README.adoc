@@ -1,0 +1,52 @@
+ifndef::env-github[:icons: font]
+:toc: preamble
+:toclevels: 2
+:sectanchors:
+endif::[]
+
+ifndef::env-github[]
+image:https://img.shields.io/github/contributors/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Contributors,link=https://github.com/LinxPhotos/docs.linx.photos/graphs/contributors]
+image:https://img.shields.io/github/forks/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Forks,link=https://github.com/LinxPhotos/docs.linx.photos/network/members]
+image:https://img.shields.io/github/stars/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Stars,link=https://github.com/LinxPhotos/docs.linx.photos/stargazers]
+image:https://img.shields.io/github/issues/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Issues,link=https://github.com/LinxPhotos/docs.linx.photos/issues]
+endif::[]
+
+ifdef::env-github[]
+image:https://img.shields.io/github/contributors/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Contributors]
+image:https://img.shields.io/github/forks/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Forks]
+image:https://img.shields.io/github/stars/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Stars]
+image:https://img.shields.io/github/issues/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Issues]
+endif::[]
+
+= docs.linx.photos
+
+Antora documentation site for LinxPhotos products.
+
+link:https://linx.photos/[linx.photos] ·
+link:https://github.com/LinxPhotos/docs.linx.photos/issues[Report Bug] ·
+link:https://github.com/LinxPhotos/docs.linx.photos/issues[Request Feature]
+
+== About The Project
+
+Documentation hub for LinxPhotos tools, built with Antora and Handlebars-based supplemental UI.
+
+== Installation
+
+[source,bash]
+----
+pnpm install
+----
+
+== Usage
+
+[source,bash]
+----
+pnpm build
+----
+
+== Contact
+
+Linx Photos — support@linx.photos
+
+* Project: https://github.com/LinxPhotos/docs.linx.photos
+* Site: https://linx.photos
