@@ -2,9 +2,29 @@ ifndef::env-github[:icons: font]
 :toc: preamble
 :toclevels: 2
 :sectanchors:
+
+ifdef::env-github[]
+++++
+<a id="readme-top"></a>
+<div align="center">
+<a href="https://github.com/LinxPhotos/docs.linx.photos/graphs/contributors"><img src="https://img.shields.io/github/contributors/LinxPhotos/docs.linx.photos.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/LinxPhotos/docs.linx.photos/network/members"><img src="https://img.shields.io/github/forks/LinxPhotos/docs.linx.photos.svg?style=for-the-badge" alt="Forks"></a>
+<a href="https://github.com/LinxPhotos/docs.linx.photos/stargazers"><img src="https://img.shields.io/github/stars/LinxPhotos/docs.linx.photos.svg?style=for-the-badge" alt="Stargazers"></a>
+<a href="https://github.com/LinxPhotos/docs.linx.photos/issues"><img src="https://img.shields.io/github/issues/LinxPhotos/docs.linx.photos.svg?style=for-the-badge" alt="Issues"></a>
+<br />
+<h3 align="center">docs.linx.photos</h3>
+<p align="center">
+Antora documentation site for LinxPhotos products.<br />
+<a href="https://linx.photos/"><strong>linx.photos »</strong></a><br /><br />
+<a href="https://github.com/LinxPhotos/docs.linx.photos/issues">Report Bug</a>
+&middot;
+<a href="https://github.com/LinxPhotos/docs.linx.photos/issues">Request Feature</a>
+</p>
+</div>
+++++
 endif::[]
 
-[[readme-top]]
+ifndef::env-github[]
 image:https://img.shields.io/github/contributors/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Contributors,link=https://github.com/LinxPhotos/docs.linx.photos/graphs/contributors]
 image:https://img.shields.io/github/forks/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Forks,link=https://github.com/LinxPhotos/docs.linx.photos/network/members]
 image:https://img.shields.io/github/stars/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Stars,link=https://github.com/LinxPhotos/docs.linx.photos/stargazers]
@@ -17,12 +37,17 @@ Antora documentation site for LinxPhotos products.
 link:https://linx.photos/[linx.photos] ·
 link:https://github.com/LinxPhotos/docs.linx.photos/issues[Report Bug] ·
 link:https://github.com/LinxPhotos/docs.linx.photos/issues[Request Feature]
+endif::[]
 
 == About The Project
 
 Documentation hub for LinxPhotos tools, built with Antora and Handlebars-based supplemental UI.
 
-link:#readme-top[back to top]
+ifdef::env-github[]
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+endif::[]
 
 == Installation
 
@@ -31,7 +56,11 @@ link:#readme-top[back to top]
 pnpm install
 ----
 
-link:#readme-top[back to top]
+ifdef::env-github[]
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+endif::[]
 
 == Usage
 
@@ -40,7 +69,11 @@ link:#readme-top[back to top]
 pnpm build
 ----
 
-link:#readme-top[back to top]
+ifdef::env-github[]
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+endif::[]
 
 == Contact
 
@@ -49,4 +82,8 @@ Linx Photos — support@linx.photos
 * Project: https://github.com/LinxPhotos/docs.linx.photos
 * Site: https://linx.photos
 
-link:#readme-top[back to top]
+ifdef::env-github[]
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+endif::[]
