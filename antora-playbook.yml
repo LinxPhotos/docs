@@ -16,3 +16,7 @@ output:
   dir: ./public/docs
 runtime:
   fetch: true
+
+asciidoc:
+  attributes:
+    stem: latexmath
