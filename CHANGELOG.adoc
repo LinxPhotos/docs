@@ -3,6 +3,11 @@
 
 Reader-facing Antora timeline: link:https://docs.linx.photos/photo-service/changelog/[Changelog on the docs site].
 
+== Unreleased
+
+* Pin `page-context` to `v0.6.4` (empty lead shell on component home) and `page-edit` to `v0.2.3` (never prepend View|Edit before `<!DOCTYPE>`). Fixes View|Edit above the top navbar on the hub start page.
+* Rebuild after Valentus rolling `v2` picks up the restored home icon chip + Version kicker label (when that UI bundle is released).
+
 == 2026-09-10 — Refresh Facto extension pins
 
 * Pin `page-context` to `v0.6.3` and `page-edit` to `v0.2.1` (tagged releases).

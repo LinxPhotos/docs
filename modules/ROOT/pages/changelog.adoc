@@ -21,6 +21,10 @@ Last updated:: {page-last-edited}
 ****
 endif::[]
 
+== Unreleased
+
+* Pin page-context `v0.6.4` / page-edit `v0.2.3` so View|Edit stays in the page-context lead (fixes component-home placement above the top navbar). Rebuild after Valentus `v2` rolling release for the restored home icon + Version kicker.
+
 == 2026-09-10 — Refresh Facto extension pins
 
 * Pin page-context `v0.6.3` / page-edit `v0.2.1`; Antora `^3.2.0`; keyword listing under `/photo-service/keywords/` (Kroki stays on 0.18.x until Asciidoctor 4).
