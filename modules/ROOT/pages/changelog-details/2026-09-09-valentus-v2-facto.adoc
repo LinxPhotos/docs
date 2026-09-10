@@ -1,5 +1,5 @@
 = 2026-09-09 — Valentus v2 + Facto
-:description: Detail for migrating docs.linx.photos from Valentus v1 to v2 with Facto essentials.
+:description: Detail for migrating the Linx Photos docs hub from Valentus v1 to v2 with Facto essentials.
 :page-audience: Maintainers upgrading or auditing the docs hub UI stack
 :page-usage-context: Changelog detail under the Changelog index
 :page-orig-author: Ryan Johnson

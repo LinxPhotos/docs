@@ -1,5 +1,5 @@
 {
-  "name": "docs.linx.photos",
+  "name": "docs",
   "version": "1.0.0",
   "private": true,
   "description": "Documentation hub for Linx Photos (Antora + Valentus v2 + Facto)",

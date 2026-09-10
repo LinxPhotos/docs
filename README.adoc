@@ -7,47 +7,48 @@ ifdef::env-github[]
 ++++
 <a id="readme-top"></a>
 <div align="center">
-<a href="https://github.com/LinxPhotos/docs.linx.photos/graphs/contributors"><img src="https://img.shields.io/github/contributors/LinxPhotos/docs.linx.photos.svg?style=for-the-badge" alt="Contributors"></a>
-<a href="https://github.com/LinxPhotos/docs.linx.photos/network/members"><img src="https://img.shields.io/github/forks/LinxPhotos/docs.linx.photos.svg?style=for-the-badge" alt="Forks"></a>
-<a href="https://github.com/LinxPhotos/docs.linx.photos/stargazers"><img src="https://img.shields.io/github/stars/LinxPhotos/docs.linx.photos.svg?style=for-the-badge" alt="Stargazers"></a>
-<a href="https://github.com/LinxPhotos/docs.linx.photos/issues"><img src="https://img.shields.io/github/issues/LinxPhotos/docs.linx.photos.svg?style=for-the-badge" alt="Issues"></a>
+<a href="https://github.com/LinxPhotos/docs/graphs/contributors"><img src="https://img.shields.io/github/contributors/LinxPhotos/docs.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/LinxPhotos/docs/network/members"><img src="https://img.shields.io/github/forks/LinxPhotos/docs.svg?style=for-the-badge" alt="Forks"></a>
+<a href="https://github.com/LinxPhotos/docs/stargazers"><img src="https://img.shields.io/github/stars/LinxPhotos/docs.svg?style=for-the-badge" alt="Stargazers"></a>
+<a href="https://github.com/LinxPhotos/docs/issues"><img src="https://img.shields.io/github/issues/LinxPhotos/docs.svg?style=for-the-badge" alt="Issues"></a>
 <br />
-<h3 align="center">docs.linx.photos</h3>
+<h3 align="center">docs</h3>
 <p align="center">
-Antora documentation site for LinxPhotos products.<br />
-<a href="https://linx.photos/"><strong>linx.photos »</strong></a><br /><br />
-<a href="https://github.com/LinxPhotos/docs.linx.photos/issues">Report Bug</a>
+Antora documentation hub for LinxPhotos (published at docs.linx.photos).<br />
+<a href="https://docs.linx.photos/"><strong>docs.linx.photos »</strong></a><br /><br />
+<a href="https://github.com/LinxPhotos/docs/issues">Report Bug</a>
 &middot;
-<a href="https://github.com/LinxPhotos/docs.linx.photos/issues">Request Feature</a>
+<a href="https://github.com/LinxPhotos/docs/issues">Request Feature</a>
 </p>
 </div>
 ++++
 endif::[]
 
 ifndef::env-github[]
-image:https://img.shields.io/github/contributors/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Contributors,link=https://github.com/LinxPhotos/docs.linx.photos/graphs/contributors]
-image:https://img.shields.io/github/forks/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Forks,link=https://github.com/LinxPhotos/docs.linx.photos/network/members]
-image:https://img.shields.io/github/stars/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Stars,link=https://github.com/LinxPhotos/docs.linx.photos/stargazers]
-image:https://img.shields.io/github/issues/LinxPhotos/docs.linx.photos.svg?style=for-the-badge[Issues,link=https://github.com/LinxPhotos/docs.linx.photos/issues]
+image:https://img.shields.io/github/contributors/LinxPhotos/docs.svg?style=for-the-badge[Contributors,link=https://github.com/LinxPhotos/docs/graphs/contributors]
+image:https://img.shields.io/github/forks/LinxPhotos/docs.svg?style=for-the-badge[Forks,link=https://github.com/LinxPhotos/docs/network/members]
+image:https://img.shields.io/github/stars/LinxPhotos/docs.svg?style=for-the-badge[Stars,link=https://github.com/LinxPhotos/docs/stargazers]
+image:https://img.shields.io/github/issues/LinxPhotos/docs.svg?style=for-the-badge[Issues,link=https://github.com/LinxPhotos/docs/issues]
 
-= docs.linx.photos
+= docs
 
-Antora documentation site for LinxPhotos products.
+Antora documentation hub for LinxPhotos products.
 
-link:https://linx.photos/[linx.photos] ·
-link:https://github.com/LinxPhotos/docs.linx.photos/issues[Report Bug] ·
-link:https://github.com/LinxPhotos/docs.linx.photos/issues[Request Feature]
+link:https://docs.linx.photos/[docs.linx.photos] ·
+link:https://github.com/LinxPhotos/docs/issues[Report Bug] ·
+link:https://github.com/LinxPhotos/docs/issues[Request Feature]
 endif::[]
 
 == About The Project
 
 Documentation hub for LinxPhotos tools, built with Antora, Valentus theme v2, and the Facto compose pack (Lunr, STEM, Kroki, page-context).
 
-Published site: https://docs.linx.photos/
+* Repository: https://github.com/LinxPhotos/docs
+* Published site: https://docs.linx.photos/ (Cloudflare DNS → GitHub Pages)
 
 == Changelog
 
-See link:CHANGELOG.adoc[CHANGELOG.adoc] and the Antora xref page on the published site.
+See link:CHANGELOG.adoc[CHANGELOG.adoc] and the Antora Changelog page on the published site.
 
 ifdef::env-github[]
 ++++
@@ -85,8 +86,8 @@ endif::[]
 
 Linx Photos — support@linx.photos
 
-* Project: https://github.com/LinxPhotos/docs.linx.photos
-* Site: https://linx.photos
+* Project: https://github.com/LinxPhotos/docs
+* Site: https://docs.linx.photos
 
 ifdef::env-github[]
 ++++

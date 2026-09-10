@@ -21,6 +21,10 @@ Last updated:: {page-last-edited}
 ****
 endif::[]
 
+== 2026-09-10 — Rename hub repo to docs
+
+* GitHub repository is `LinxPhotos/docs`; public URL remains https://docs.linx.photos/.
+
 == 2026-09-09 — Valentus v2 + Facto
 
 xref:changelog-details/2026-09-09-valentus-v2-facto.adoc[Migrate the docs hub to Valentus v2 and the Facto compose pack.]

@@ -1,0 +1,3 @@
+# Publish CNAME to site root so GitHub Pages keeps the custom domain (docs.linx.photos).
+static_files:
+  - CNAME
