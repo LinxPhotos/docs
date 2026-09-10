@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="footer-related" aria-label="Related">
+    <p class="footer-related-label">Related</p>
+    <p class="footer-related-links">
+      <a href="https://linx.photos">Linx Photos</a>
+      ·
+      <a href="https://imgcdn.dev">imgcdn.dev</a>
+    </p>
+  </div>
+  {{> footer-build-stack}}
+  <p>
+    Built with <a href="https://antora.org" target="_blank" rel="noopener">Antora</a>{{#if antoraVersion}} <span class="antora-version">({{antoraVersion}})</span>{{/if}}.
+    UI:
+    {{#if site.keys.ui_bundle_name}}
+    <a href="{{site.keys.ui_bundle_url}}" target="_blank" rel="noopener">{{site.keys.ui_bundle_name}}</a>
+    {{else}}
+    <a href="https://github.com/antora-supplemental/valentus-theme" target="_blank" rel="noopener">valentus-theme</a>
+    {{/if}}
+    (MIT){{#if site.keys.footerNote}}. <span class="site-footer-note">{{{site.keys.footerNote}}}</span>{{/if}}.
+  </p>
+</footer>

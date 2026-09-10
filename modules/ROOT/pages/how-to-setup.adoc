@@ -1,7 +1,27 @@
 = Setup Guide
-:navtitle: Setup
+:description: Install and run Linx Photos locally with Turso, OAuth, and pnpm.
+:page-audience: Developers setting up Linx Photos for the first time
+:page-usage-context: Docs hub how-to (full page)
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-09
+:page-diataxis: how-to
 
-Follow these steps to get PhotoLink running locally and connected to your infrastructure.
+ifndef::page-context-active[]
+[.page-context.page-context-lead]
+****
+Audience:: {page-audience}
+****
+
+[.page-context.page-context-footer]
+****
+Original author:: {page-orig-author}
+Latest contributor:: {page-last-author}
+Last updated:: {page-last-edited}
+****
+endif::[]
+
+Follow these steps to get Linx Photos running locally and connected to your infrastructure.
 
 == Prerequisites
 

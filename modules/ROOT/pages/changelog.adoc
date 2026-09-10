@@ -1,0 +1,35 @@
+= Changelog
+:description: Ship timeline for the Linx Photos documentation hub.
+:page-audience: Maintainers and readers tracking docs hub changes
+:page-usage-context: Timeline index; detail pages link from each entry
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-09
+:page-diataxis: reference
+
+ifndef::page-context-active[]
+[.page-context.page-context-lead]
+****
+Audience:: {page-audience}
+****
+
+[.page-context.page-context-footer]
+****
+Original author:: {page-orig-author}
+Latest contributor:: {page-last-author}
+Last updated:: {page-last-edited}
+****
+endif::[]
+
+== 2026-09-09 — Valentus v2 + Facto
+
+xref:changelog-details/2026-09-09-valentus-v2-facto.adoc[Migrate the docs hub to Valentus v2 and the Facto compose pack.]
+
+== 2026-08-12 — KaTeX stem math
+
+* Enable `stem: latexmath` and KaTeX plumbing on every docs page.
+
+== Earlier
+
+* Supplemental UI branding, dprint, and editor setup for the Antora hub.
+* Public README layout and badge links.

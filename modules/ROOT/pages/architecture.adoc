@@ -1,5 +1,25 @@
-= Architecture Overview
-:navtitle: Architecture
+= Architecture
+:description: How Linx Photos is structured — stack, studio hierarchy, and Visual Join albums.
+:page-audience: Photographers and developers who want the system model before integrating
+:page-usage-context: Docs hub explanation page
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-09
+:page-diataxis: explanation
+
+ifndef::page-context-active[]
+[.page-context.page-context-lead]
+****
+Audience:: {page-audience}
+****
+
+[.page-context.page-context-footer]
+****
+Original author:: {page-orig-author}
+Latest contributor:: {page-last-author}
+Last updated:: {page-last-edited}
+****
+endif::[]
 
 Linx Photos is built as a robust, scalable backend for the photography industry. It bridges the gap between raw cloud storage and polished client-facing experiences.
 

@@ -1,0 +1,15 @@
+/*
+ * Linx Photos brand overlay for valentus-theme 2.x.
+ * Accents match linx.photos marketing tokens (--accent / --accent-deep).
+ */
+:root {
+  --adt-accent: #3d5a4c;
+  --adt-accent-hover: #2f463b;
+  --adt-accent-soft: rgba(61, 90, 76, 0.12);
+}
+
+html.dark-theme {
+  --adt-accent: #8fa89a;
+  --adt-accent-hover: #a4bdae;
+  --adt-accent-soft: rgba(143, 168, 154, 0.14);
+}

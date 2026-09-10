@@ -1,14 +1,23 @@
 {
   "name": "docs.linx.photos",
   "version": "1.0.0",
-  "description": "Documentation for Linx Photos",
-  "main": "index.js",
+  "private": true,
+  "description": "Documentation hub for Linx Photos (Antora + Valentus v2 + Facto)",
   "scripts": {
     "dev": "antora antora-playbook.yml",
     "build": "antora --fetch antora-playbook.yml && copy supplemental-ui\\img\\favicon.ico public\\docs\\favicon.ico"
   },
+  "dependencies": {
+    "@antora-supplemental/build-stack": "github:antora-supplemental/build-stack#main",
+    "@antora-supplemental/page-context": "github:antora-supplemental/page-context#main",
+    "@antora-supplemental/page-edit": "github:antora-supplemental/page-edit#main",
+    "@antora/lunr-extension": "^1.0.0-alpha.13",
+    "asciidoctor-kroki": "^0.18.1"
+  },
   "devDependencies": {
     "@antora/cli": "^3.1.14",
-    "@antora/site-generator-default": "^3.1.14"
-  }
+    "@antora/site-generator-default": "^3.1.14",
+    "antora": "^3.1.14"
+  },
+  "packageManager": "pnpm@10.28.1"
 }

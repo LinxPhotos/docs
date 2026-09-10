@@ -1,0 +1,26 @@
+= 2026-09-09 — Valentus v2 + Facto
+:description: Detail for migrating docs.linx.photos from Valentus v1 to v2 with Facto essentials.
+:page-audience: Maintainers upgrading or auditing the docs hub UI stack
+:page-usage-context: Changelog detail under the Changelog index
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-09
+:page-diataxis: reference
+
+ifndef::page-context-active[]
+[.page-context.page-context-lead]
+****
+Audience:: {page-audience}
+****
+
+[.page-context.page-context-footer]
+****
+Original author:: {page-orig-author}
+Latest contributor:: {page-last-author}
+Last updated:: {page-last-edited}
+****
+endif::[]
+
+The docs hub playbook now pins the Valentus UI bundle to the rolling `v2` line and adopts Facto essentials: Lunr search, Kroki diagrams, page-context metadata, page-edit, and build-stack footer attribution.
+
+Site branding is a thin supplemental layer (`linx-brand.css`, logo pair via `site.keys`) instead of a forked Default UI header. Folder URLs use `urls.html_extension_style: indexify`. STEM/KaTeX comes from the Valentus v2 bundle.

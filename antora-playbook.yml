@@ -1,22 +1,51 @@
+# Linx Photos docs hub — Valentus v2 + Facto essentials
+# (Lunr, STEM, Kroki, page-context, page-edit, build-stack).
+# Single-component hub: skip site-nav-tree / nav-typology.
 site:
   title: Linx Photos Documentation
   url: https://docs.linx.photos
   start_page: photo-service:ROOT:index.adoc
+  keys:
+    header_logo: logo-black.svg
+    header_logo_dark: logo-white.svg
+    site_home_url: https://linx.photos
+    site_home_label: Linx Photos home
+    header_doc_title: Linx Photos Docs
+    github_profile_url: https://github.com/LinxPhotos
+
+urls:
+  html_extension_style: indexify
+
+antora:
+  extensions:
+    - '@antora/lunr-extension'
+    - '@antora-supplemental/build-stack'
+    - '@antora-supplemental/page-edit'
+
 content:
   sources:
   - url: .
     branches: HEAD
     start_path: .
+
 ui:
   bundle:
-    url: https://github.com/antora-supplemental/valentus-theme/releases/download/v1/ui-bundle.zip
+    url: https://github.com/antora-supplemental/valentus-theme/releases/download/v2/ui-bundle.zip
     snapshot: true
   supplemental_files: ./supplemental-ui
+
 output:
   dir: ./public/docs
+
 runtime:
   fetch: true
 
 asciidoc:
+  extensions:
+    - asciidoctor-kroki
+    - '@antora-supplemental/page-context'
   attributes:
     stem: latexmath
+    kroki-server-url: https://kroki.io
+    kroki-fetch-diagram: true
+    page-context-active: ''

@@ -1,5 +1,25 @@
-= Linx Photos Documentation
-:navtitle: Introduction
+= Introduction
+:description: Welcome to Linx Photos documentation — zero-config SaaS for professional photographers.
+:page-audience: Photographers and developers integrating Linx Photos into a portfolio or studio site
+:page-usage-context: Docs hub start page (full article, not a sidebar snippet)
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-09
+:page-diataxis: explanation
+
+ifndef::page-context-active[]
+[.page-context.page-context-lead]
+****
+Audience:: {page-audience}
+****
+
+[.page-context.page-context-footer]
+****
+Original author:: {page-orig-author}
+Latest contributor:: {page-last-author}
+Last updated:: {page-last-edited}
+****
+endif::[]
 
 Welcome to the official documentation for **Linx Photos**, the "Zero-Config" SaaS for professional photographers.
 

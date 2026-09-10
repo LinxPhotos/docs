@@ -7,6 +7,22 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@antora-supplemental/build-stack':
+        specifier: github:antora-supplemental/build-stack#main
+        version: https://codeload.github.com/antora-supplemental/build-stack/tar.gz/84875b509693847d123c066d815af3269dd3054c(@antora/site-generator@3.2.0)
+      '@antora-supplemental/page-context':
+        specifier: github:antora-supplemental/page-context#main
+        version: https://codeload.github.com/antora-supplemental/page-context/tar.gz/77495f1a231698f22fac5a363904ac72433562fb
+      '@antora-supplemental/page-edit':
+        specifier: github:antora-supplemental/page-edit#main
+        version: https://codeload.github.com/antora-supplemental/page-edit/tar.gz/8dc5913948dbcf3f9f3f087a5ebf60ed7d3ec2e8(@antora/site-generator@3.2.0)
+      '@antora/lunr-extension':
+        specifier: ^1.0.0-alpha.13
+        version: 1.0.0-alpha.13
+      asciidoctor-kroki:
+        specifier: ^0.18.1
+        version: 0.18.1(@asciidoctor/core@2.2.8)
     devDependencies:
       '@antora/cli':
         specifier: ^3.1.14
@@ -14,29 +30,72 @@ importers:
       '@antora/site-generator-default':
         specifier: ^3.1.14
         version: 3.1.14
+      antora:
+        specifier: ^3.1.14
+        version: 3.2.0
 
 packages:
+
+  '@antora-supplemental/build-stack@https://codeload.github.com/antora-supplemental/build-stack/tar.gz/84875b509693847d123c066d815af3269dd3054c':
+    resolution: {tarball: https://codeload.github.com/antora-supplemental/build-stack/tar.gz/84875b509693847d123c066d815af3269dd3054c}
+    version: 0.1.2
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@antora/site-generator': '>=3.1.0'
+
+  '@antora-supplemental/page-context@https://codeload.github.com/antora-supplemental/page-context/tar.gz/77495f1a231698f22fac5a363904ac72433562fb':
+    resolution: {tarball: https://codeload.github.com/antora-supplemental/page-context/tar.gz/77495f1a231698f22fac5a363904ac72433562fb}
+    version: 0.4.0
+    engines: {node: '>=18'}
+
+  '@antora-supplemental/page-edit@https://codeload.github.com/antora-supplemental/page-edit/tar.gz/8dc5913948dbcf3f9f3f087a5ebf60ed7d3ec2e8':
+    resolution: {tarball: https://codeload.github.com/antora-supplemental/page-edit/tar.gz/8dc5913948dbcf3f9f3f087a5ebf60ed7d3ec2e8}
+    version: 0.1.0
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@antora/site-generator': '>=3.1.0'
 
   '@antora/asciidoc-loader@3.1.14':
     resolution: {integrity: sha512-4xxisnoBFrlLNY6f3xZtyyfgm+tBLsqesTcEStfc8jtXUMYJ4b2DWIzo1vULmxvZ7yY5+Q7YqEvS5o6kIWAG0A==}
     engines: {node: '>=16.0.0'}
+
+  '@antora/asciidoc-loader@3.2.0':
+    resolution: {integrity: sha512-IaxhqSl9CvAi5Ieqt3Kc1SlJ11iq4kkWNFAAwUFCv/9L0WbzoczQ+o0y0W2lEONXVCKOBT1yzFBi55149SNwUQ==}
+    engines: {node: '>=20.0.0'}
 
   '@antora/cli@3.1.14':
     resolution: {integrity: sha512-I6WcygMU2bFInjdURJjkYjo7K5M8B3lBB53v9OO0IcY0LhEY8Wa7IlZ7wVinf5qEjHvaYzRGTZVl6RsJtVt7Sw==}
     engines: {node: '>=16.0.0'}
     hasBin: true
 
+  '@antora/cli@3.2.0':
+    resolution: {integrity: sha512-bJ5Vl+FMH52xm2jxdcbrEUN3aeoIYj5NGzLGsVwIPewM0RXee0kckbToAFnU0EK0Uw07cBomiJ5hwVELex0/ug==}
+    engines: {node: '>=20.0.0'}
+    hasBin: true
+
   '@antora/content-aggregator@3.1.14':
     resolution: {integrity: sha512-FVuBgnrGPiktYqK1WHbGF8O8l4m5KHlkxoJumrbacgFo8SKuiRFEo31zalxrCUsv8QM3UBEgX+LdHrve/9CGLg==}
     engines: {node: '>=16.0.0'}
+
+  '@antora/content-aggregator@3.2.0':
+    resolution: {integrity: sha512-Q7lTjNFlpQx3SWW8QbNv5P4f1DhiKhYY3PyMifRHc4npuILOU0q4+kmlO1W1swSDDCg5pDjmgwitwAi9VQgvhg==}
+    engines: {node: '>=20.0.0'}
 
   '@antora/content-classifier@3.1.14':
     resolution: {integrity: sha512-y8Fk+KU1lqD3aawOu3ZFK92YfOZ1k3YBJhLI9QIFM6Ck4STPnf7AwYbhfOtjODlwer5/OhFmfhjUB2hn7onGnA==}
     engines: {node: '>=16.0.0'}
 
+  '@antora/content-classifier@3.2.0':
+    resolution: {integrity: sha512-fUrh08qpgbsjV7noFTWDQaevLC2NAs3gHRJbaTTvULEb+OZRCB0LjEPyvhIAk1wKwkfPqcnjAShJHurH/gXPCg==}
+    engines: {node: '>=20.0.0'}
+
   '@antora/document-converter@3.1.14':
     resolution: {integrity: sha512-f6wFnL+489DI0ZDgoxYWzbxxWqPviRiJ56OHS1NixEfvJ7OpRBDPEbX1xnsIeiyFBgqX4+nY92MsCWKTa+Gf3w==}
     engines: {node: '>=16.0.0'}
+
+  '@antora/document-converter@3.2.0':
+    resolution: {integrity: sha512-+cwQxIIRNI9+BXHk2fff/jvBd17p/AHslAT02ic6tWlgRaORc5y5/dRK+Q9hSjE6vpndE92gyokRn2zsigOUDg==}
+    engines: {node: '>=20.0.0'}
 
   '@antora/expand-path-helper@3.0.0':
     resolution: {integrity: sha512-7PdEIhk97v85/CSm3HynCsX14TR6oIVz1s233nNLsiWubE8tTnpPt4sNRJR+hpmIZ6Bx9c6QDp3XIoiyu/WYYA==}
@@ -46,25 +105,53 @@ packages:
     resolution: {integrity: sha512-fTaAnkyKSOlsxQM1TBFCAmiERA6Q67XleDCD2bMPVgfcENmo0Xfx59KwCHaA92IcRSmMftydlXHPaFxNh0UVsg==}
     engines: {node: '>=16.0.0'}
 
+  '@antora/file-publisher@3.2.0':
+    resolution: {integrity: sha512-UqKzDI2JR/Ms88kgUteyqvIikekDBoZZGPo8L79GpvffPBP2CJmhCSSue1IuV0aFtobHuCgWqWtHzsdhy7KJ6Q==}
+    engines: {node: '>=20.0.0'}
+
   '@antora/logger@3.1.14':
     resolution: {integrity: sha512-kVEeGqZbXR903hPIm+BlN97fLdQ3LoUzE/BOPZ6vRp9m9Mmbnm67Kg7fSYkfTMLB0S2UWpAPFg22RdsU5ZoAzA==}
+    engines: {node: '>=16.0.0'}
+
+  '@antora/logger@3.2.0':
+    resolution: {integrity: sha512-2+bTFjYOuwoWjgtIfpf8bit6OuizI7O8RnXsHzX2y6/PBbm9K8ulvmqtnFk8933P5ILTZ/NSrbgvcFz5BXrY8A==}
+    engines: {node: '>=20.0.0'}
+
+  '@antora/lunr-extension@1.0.0-alpha.13':
+    resolution: {integrity: sha512-u8n8XLB6elMmXbW0bdeL5jG8UBJi6PSiz1zaMn+wIIIu/bnxotRBW4kEWSge+zTfdF4rEYMcJ9LvkAOamMyuKQ==}
     engines: {node: '>=16.0.0'}
 
   '@antora/navigation-builder@3.1.14':
     resolution: {integrity: sha512-/637YLGD7oUHGSfEfszXkk4ASfIhDAg5Xs9035J1dV07XYRlGqmtUb15rtapbcECpcQFjCyM5jFQYSNNvLrGcQ==}
     engines: {node: '>=16.0.0'}
 
+  '@antora/navigation-builder@3.2.0':
+    resolution: {integrity: sha512-W7TI0e2doDwpF7YYsYUYJtxFQfDre4egU33eOM8Y7ZEUaAZBweOCiANFgZmfZiCvM3nswLyBtMJqvVzAc8vPTg==}
+    engines: {node: '>=20.0.0'}
+
   '@antora/page-composer@3.1.14':
     resolution: {integrity: sha512-RfA+67TxCqUPrQbZdrfjgLpHh8MR2z2du7cyF3HGX4N6DpqEBvz81NHHl3rA3fj6BQZPQbGm2OYAMU6wzJ6Pog==}
     engines: {node: '>=16.0.0'}
+
+  '@antora/page-composer@3.2.0':
+    resolution: {integrity: sha512-cBr9wYnF6ba4fbbVvs+fR/88BPoqFB9bxdU2z2kWXDsAkQIT/OHLauo+UY+H5+pw/SET1A9bOwMaNlvM4mvfxg==}
+    engines: {node: '>=20.0.0'}
 
   '@antora/playbook-builder@3.1.14':
     resolution: {integrity: sha512-Ss2r7In00u/n9Da+JOxEqIE8NeRosf+f+agzH3Te09JV/mpgZKxEOE5V/VuP+TNNq4ww1eu5aOS8DiU2PYwj4Q==}
     engines: {node: '>=16.0.0'}
 
+  '@antora/playbook-builder@3.2.0':
+    resolution: {integrity: sha512-mAOrE+vDRa0wUcTc3JIZWvEai69vZ1kx6CvZi8ugSYrcWbZxNDp+R5pYWRX9037dZ5e6s5hKKGV503thm9BiSw==}
+    engines: {node: '>=20.0.0'}
+
   '@antora/redirect-producer@3.1.14':
     resolution: {integrity: sha512-5koAwRk1cZrvE/qfOWKXqb3jtxrZbWA5EYHYGFEoato5By3cbC42blH4Bre9/48pjyS6znFpbZhYUBpT7PRhZA==}
     engines: {node: '>=16.0.0'}
+
+  '@antora/redirect-producer@3.2.0':
+    resolution: {integrity: sha512-soJbguowD3r7rCMn/r6OMiphXXUwNXUE9MeR6xrDa1RnoTu5mNALIhgI4mBid1CZ/jb+tnJ0WQWVArM1d9EmKw==}
+    engines: {node: '>=20.0.0'}
 
   '@antora/site-generator-default@3.1.14':
     resolution: {integrity: sha512-p+tVzVkJ8+pcnxUP7m5KG6ROK9T6ULS9Vmt9v/9mfQH9KmZ4xtlbbG00x8j/OLSY9pEvTvdTfUwZXm/6Nqpc9g==}
@@ -74,17 +161,33 @@ packages:
     resolution: {integrity: sha512-hQIUVtM9+xwleYWc4fIRZmiKl2p+ItOJuUm2+Hkdh07BZsySxkMOxxCyZsvTn9rc+4R94CYqDQCYElwFwdB2WA==}
     engines: {node: '>=16.0.0'}
 
+  '@antora/site-generator@3.2.0':
+    resolution: {integrity: sha512-bgShOpARuO+1MF50HUsv25C7msyZk6GpaP2EBcjqD3s0Dj51amQL5KMqAbwfKLjTCiAUTGpC/Yb8rGeogUnmYw==}
+    engines: {node: '>=20.0.0'}
+
   '@antora/site-mapper@3.1.14':
     resolution: {integrity: sha512-3qbETtwadl+fWREjzrBUxPUorMcMiZ+hdkB1El9z7it9KzKh0Yp7Je0+2uTxGX+Lov9uik48dZJ9e/mr5PeaRQ==}
     engines: {node: '>=16.0.0'}
+
+  '@antora/site-mapper@3.2.0':
+    resolution: {integrity: sha512-ZnBl03Ha5dLlduVoKGC2kn+n0o8IPwoMzSbu+rLok+uzEPR2La7fQXNJa9exNzBtnE2GnNkj37jJg6YHQpIUiw==}
+    engines: {node: '>=20.0.0'}
 
   '@antora/site-publisher@3.1.14':
     resolution: {integrity: sha512-8apyEmgepUc7ms9CTEIPwN3tGtWwLqR6fbLMLs7hibqmOSR880Ut/4GRGb97sqcGQXSHdIyWK2oJKzRl1Akb6Q==}
     engines: {node: '>=16.0.0'}
 
+  '@antora/site-publisher@3.2.0':
+    resolution: {integrity: sha512-zXYxyH0+NuhaPnGReDvL8CCmYPsocxSKn3HeE3Z39lrexK/qSajliUGYW0jP9IRi+cCFXpvuC7PDYtQfZDvWaw==}
+    engines: {node: '>=20.0.0'}
+
   '@antora/ui-loader@3.1.14':
     resolution: {integrity: sha512-LVvTdKQOB44CmJ1JQDu8sJf6rrLZMxPAWWackdg2JtGyGHHpd80/MBcv4BSFk7//cJQ13Oqm/7JCbhD51KAFjg==}
     engines: {node: '>=16.0.0'}
+
+  '@antora/ui-loader@3.2.0':
+    resolution: {integrity: sha512-EYagiuG2Tk5QtnG/rwTzu/8mxDtL8J2oqZc74g0h4h3iatJeD8yNrDc8iDhNaycEZNaxPRfIK73tpKuIFZw+Iw==}
+    engines: {node: '>=20.0.0'}
 
   '@antora/user-require-helper@3.0.0':
     resolution: {integrity: sha512-KIXb8WYhnrnwH7Jj21l1w+et9k5GvcgcqvLOwxqWLEd0uVZOiMFdqFjqbVm3M+zcrs1JXWMeh2LLvxBbQs3q/Q==}
@@ -109,12 +212,26 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
+  '@pinojs/redact@0.4.0':
+    resolution: {integrity: sha512-k2ENnmBugE/rzQfEcdWHcCY+/FM3VLzH9cYEsbdsoqrvzAKRhUZeRNhAZvB8OitQJ1TBed3yqWtdjzS6wJKBwg==}
+
   abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
     engines: {node: '>=6.5'}
 
+  antora@3.2.0:
+    resolution: {integrity: sha512-wRfXafDYW7FGOgwFf2vpM7cIBai/ms/XsCIrC8Rp+abScyEjlLxvoqjvYRmxRGcaJ3HdZ6mS8WntQlBVkQ9UKw==}
+    engines: {node: '>=20.0.0'}
+    hasBin: true
+
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  asciidoctor-kroki@0.18.1:
+    resolution: {integrity: sha512-eQxbBCaPTbyNoJtk62Gp+6h4LlJp2147g7eS0QIVjqaLpFa8sseH0BlMiBoATrJUYv1w3nR+FTzvloBJ/MioYg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@asciidoctor/core': '>=2.2 <4.0'
 
   asciidoctor-opal-runtime@0.3.3:
     resolution: {integrity: sha512-/CEVNiOia8E5BMO9FLooo+Kv18K4+4JBFRJp8vUy/N5dMRAg+fRNV4HA+o6aoSC79jVU/aT5XvUpxSxSsTS8FQ==}
@@ -163,6 +280,10 @@ packages:
   buffer-crc32@0.2.13:
     resolution: {integrity: sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==}
 
+  buffer-crc32@1.0.0:
+    resolution: {integrity: sha512-Db1SbgBS/fg/392AblrMJk97KggmvYhr4pB5ZIMTWtaivCPMWLkmb7m21cJvpvgK+J3nsU2CmmixNBZx4vFj/w==}
+    engines: {node: '>=8.0.0'}
+
   buffer@6.0.3:
     resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
 
@@ -196,6 +317,10 @@ packages:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
 
+  commander@14.0.3:
+    resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
+    engines: {node: '>=20'}
+
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
@@ -222,12 +347,29 @@ packages:
   diff3@0.0.3:
     resolution: {integrity: sha512-iSq8ngPOt0K53A6eVr4d5Kn6GNrM2nQZtC740pzIriHtn4pOQ2lyzEXQMBeVcWERN0ye7fhBsk9PbLLQOnUx/g==}
 
+  dom-serializer@2.0.0:
+    resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
+
+  domelementtype@2.3.0:
+    resolution: {integrity: sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==}
+
+  domhandler@5.0.3:
+    resolution: {integrity: sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==}
+    engines: {node: '>= 4'}
+
+  domutils@3.2.2:
+    resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
+
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
   end-of-stream@1.4.5:
     resolution: {integrity: sha512-ooEGc6HP26xXq/N+GCGOT0JKCLDGrq2bQUZrQ7gyrJiZANJ/8YDTxTpQBXGMn+WbIQXNVpyWymm7KYVICQnyOg==}
+
+  entities@4.5.0:
+    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
+    engines: {node: '>=0.12'}
 
   es-define-property@1.0.1:
     resolution: {integrity: sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g==}
@@ -333,6 +475,9 @@ packages:
     resolution: {integrity: sha512-A91dYTeIB6NoXG+PxTQpCCDDnfHsW9kc06Lvpu1TEe9gnd6ZFeiBoRO9JvzEv6xK7EX97/dUE8g/vBMTqTS3CA==}
     engines: {node: '>=14'}
 
+  htmlparser2@9.1.0:
+    resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
+
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
 
@@ -375,12 +520,21 @@ packages:
     engines: {node: '>=12'}
     hasBin: true
 
+  isomorphic-git@1.38.10:
+    resolution: {integrity: sha512-nJSSq7ypu97vM33rSdxXyPzSWksCberjKspzXhFEcBHdVyxdNkWByAzJ/AURV1jIlfv8pLq37lGdIEt7ORj17Q==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   joycon@3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
     engines: {node: '>=10'}
 
   js-yaml@4.1.1:
     resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
+    hasBin: true
+
+  js-yaml@5.4.1:
+    resolution: {integrity: sha512-28R/k+NAjeuf7+CKlTxWZVExJGwVVLwY06DgEnOMz2gEpfNkDcD7QvyiVPT0xy0XXhU8vHsd4Ot42OOPdJG7dQ==}
     hasBin: true
 
   json5@2.2.3:
@@ -390,6 +544,12 @@ packages:
 
   lodash.clonedeep@4.5.0:
     resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+
+  lunr-languages@1.10.0:
+    resolution: {integrity: sha512-BBjKKcwrieJlzwwc9M5H/MRXGJ2qyOSDx/NXYiwkuKjiLOOoouh0WsDzeqcLoUWcX31y7i8sb8IgsZKObdUCkw==}
+
+  lunr@2.3.9:
+    resolution: {integrity: sha512-zTU3DaZaF3Rt9rhN3uBMGQD3dD2/vFQqnvZCDv4dl5iOzq2IZQqTxu90r4E5J+nP70J3ilqVCrbho2eWaeW8Ow==}
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -407,9 +567,17 @@ packages:
     resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
     engines: {node: '>= 0.6'}
 
+  mime-db@1.54.0:
+    resolution: {integrity: sha512-aU5EJuIN2WDemCcAp2vFBfp/m4EAhWJnUNSSw0ixs7/kXbd6Pg64EmwJkNdFhB8aWt1sH2CTXrLxo/iAGV3oPQ==}
+    engines: {node: '>= 0.6'}
+
   mime-types@2.1.35:
     resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
     engines: {node: '>= 0.6'}
+
+  mime-types@3.0.2:
+    resolution: {integrity: sha512-Lbgzdk0h4juoQ9fCKXW4by0UJqj+nOOrI9MJ1sSj4nI8aI2eo1qmvQEie4VD1glsS250n15LsWsYtCugiStS5A==}
+    engines: {node: '>=18'}
 
   mimic-response@3.1.0:
     resolution: {integrity: sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==}
@@ -423,6 +591,11 @@ packages:
 
   minimisted@2.0.1:
     resolution: {integrity: sha512-1oPjfuLQa2caorJUM8HV8lGgWCc0qqAO1MNv/k05G4qslmsndV/5WdNZrqCiyqiz3wohia2Ij2B7w2Dr7/IyrA==}
+
+  mkdirp@2.1.3:
+    resolution: {integrity: sha512-sjAkg21peAG9HS+Dkx7hlG9Ztx7HLeKnvB3NQRcu/mltCVmvkF0pisbiTSfDVYTT86XEfZrTUosLdZLStquZUw==}
+    engines: {node: '>=10'}
+    hasBin: true
 
   multi-progress@4.0.0:
     resolution: {integrity: sha512-9zcjyOou3FFCKPXsmkbC3ethv51SFPoA4dJD6TscIp2pUmy26kBDZW6h9XofPELrzseSkuD7r0V+emGEeo39Pg==}
@@ -441,6 +614,9 @@ packages:
 
   pako@1.0.11:
     resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
+
+  pako@2.1.0:
+    resolution: {integrity: sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==}
 
   path-is-absolute@1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
@@ -464,12 +640,19 @@ packages:
   pino-abstract-transport@1.2.0:
     resolution: {integrity: sha512-Guhh8EZfPCfH+PMXAb6rKOjGQEoy0xlAIn+irODG5kgfYV+BQ0rGYYWTIel3P5mmyXqkYkPmdIkywsn6QKUR1Q==}
 
+  pino-abstract-transport@3.0.0:
+    resolution: {integrity: sha512-wlfUczU+n7Hy/Ha5j9a/gZNy7We5+cXp8YL+X+PG8S0KXxw7n/JXA3c46Y0zQznIJ83URJiwy7Lh56WLokNuxg==}
+
   pino-pretty@11.2.2:
     resolution: {integrity: sha512-2FnyGir8nAJAqD3srROdrF1J5BIcMT4nwj7hHSc60El6Uxlym00UbCCd8pYIterstVBFlMyF1yFV8XdGIPbj4A==}
     hasBin: true
 
   pino-std-serializers@7.1.0:
     resolution: {integrity: sha512-BndPH67/JxGExRgiX1dX0w1FvZck5Wa4aal9198SrRhZjH3GxKQUKIBnYJTdj2HDN3UQAS06HlfcSbQj2OHmaw==}
+
+  pino@10.3.1:
+    resolution: {integrity: sha512-r34yH/GlQpKZbU1BvFFqOjhISRo1MNx1tWYsYvmj6KIRHSPMT2+yHOEb1SG6NMvRoHRF0a07kCOox/9yakl1vg==}
+    hasBin: true
 
   pino@9.2.0:
     resolution: {integrity: sha512-g3/hpwfujK5a4oVbaefoJxezLzsDgLcNJeITvC6yrfwYeT9la+edCK42j5QpEQSQCZgTKapXvnQIdgZwvRaZug==}
@@ -481,6 +664,9 @@ packages:
 
   process-warning@3.0.0:
     resolution: {integrity: sha512-mqn0kFRl0EoqhnL0GQ0veqFHyIN1yig9RHh/InzORTUiZHFRAur+aMtRkELNwGs9aNwKS6tg/An4NYBPGwvtzQ==}
+
+  process-warning@5.1.0:
+    resolution: {integrity: sha512-jQSaVHsPgtyw60e1rQ/A+/ArPEj/S8pS/vFnyGa/gYFXrKk/6RuDkoqVDQ5NI5MmS01698ltlAk0NoDBNLujRw==}
 
   process@0.11.10:
     resolution: {integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==}
@@ -511,6 +697,9 @@ packages:
     resolution: {integrity: sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==}
     engines: {node: '>= 12.13.0'}
 
+  real-require@1.0.0:
+    resolution: {integrity: sha512-P4nbQYQfePJxRSmY+v/KINxVucm4NF3p3s7pJveMTtom52FR4YGltUQLB8idDXwDDWW+eYrWDFbuzUnjoWHF7g==}
+
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
 
@@ -528,6 +717,9 @@ packages:
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
+
+  rusha@0.8.14:
+    resolution: {integrity: sha512-cLgakCUf6PedEu15t8kbsjnwIFFR2D4RfL+W3iWFJ4iac7z4B0ZI8fxy4R3J956kAI68HclCFGL8MPoUVC3qVA==}
 
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
@@ -587,6 +779,10 @@ packages:
   thread-stream@3.1.0:
     resolution: {integrity: sha512-OqyPZ9u96VohAyMfJykzmivOrY2wfMSf3C5TtFJVgN+Hm6aj+voFhlK+kZEIv2FBh1X6Xp3DlnCOfEQ3B2J86A==}
 
+  thread-stream@4.2.0:
+    resolution: {integrity: sha512-e2zZ96wSChazBsbENf/Pcm/4swHt2cEKQ92rhUjkL9GCKiTDJIaTBenjE/m9DXi0QBmTMDkFDdOomUy20A1tDQ==}
+    engines: {node: '>=20'}
+
   to-buffer@1.2.2:
     resolution: {integrity: sha512-db0E3UJjcFhpDhAF4tLo03oli3pwl3dbnzXOUIlRKrp+ldk/VUxzpWYZENsw2SZiuBjHAk7DfB0VU7NKdpb6sw==}
     engines: {node: '>= 0.4'}
@@ -606,6 +802,10 @@ packages:
 
   unxhr@1.0.1:
     resolution: {integrity: sha512-MAhukhVHyaLGDjyDYhy8gVjWJyhTECCdNsLwlMoGFoNJ3o79fpQhtQuzmAE4IxCMDwraF4cW8ZjpAV0m9CRQbg==}
+    engines: {node: '>=8.11'}
+
+  unxhr@1.2.0:
+    resolution: {integrity: sha512-6cGpm8NFXPD9QbSNx0cD2giy7teZ6xOkCUH3U89WKVkL9N9rBrWjlCwhR94Re18ZlAop4MOc3WU1M3Hv/bgpIw==}
     engines: {node: '>=8.11'}
 
   util-deprecate@1.0.2:
@@ -637,14 +837,37 @@ packages:
     resolution: {integrity: sha512-JCCdmlJJWv7L0q/KylOekyRaUrdEoUxWkWVcgorosTROCFWiS9p2NNPE9Yb91ak7b1N5SxAZEliWpspbZccivw==}
     engines: {node: '>=12'}
 
+  yauzl@3.4.0:
+    resolution: {integrity: sha512-jIH9yLR9wqr0wOS0TpBvo/g/2UgZH5qePVbjgRliiF0BYvOZyaBknKsF+x9Iht0O6sqgnB93rCICdOZFecJuDw==}
+    engines: {node: '>=12'}
+
   yazl@2.5.1:
     resolution: {integrity: sha512-phENi2PLiHnHb6QBVot+dJnaAZ0xosj7p3fWl+znIjBDlnMI2PsZCJZ306BPTFOaHf5qdDEI8x5qFrSOBN5vrw==}
 
+  yazl@3.3.1:
+    resolution: {integrity: sha512-BbETDVWG+VcMUle37k5Fqp//7SDOK2/1+T7X8TD96M3D9G8jK5VLUdQVdVjGi8im7FGkazX7kk5hkU8X4L5Bng==}
+
 snapshots:
+
+  '@antora-supplemental/build-stack@https://codeload.github.com/antora-supplemental/build-stack/tar.gz/84875b509693847d123c066d815af3269dd3054c(@antora/site-generator@3.2.0)':
+    dependencies:
+      '@antora/site-generator': 3.2.0
+
+  '@antora-supplemental/page-context@https://codeload.github.com/antora-supplemental/page-context/tar.gz/77495f1a231698f22fac5a363904ac72433562fb': {}
+
+  '@antora-supplemental/page-edit@https://codeload.github.com/antora-supplemental/page-edit/tar.gz/8dc5913948dbcf3f9f3f087a5ebf60ed7d3ec2e8(@antora/site-generator@3.2.0)':
+    dependencies:
+      '@antora/site-generator': 3.2.0
 
   '@antora/asciidoc-loader@3.1.14':
     dependencies:
       '@antora/logger': 3.1.14
+      '@antora/user-require-helper': 3.0.0
+      '@asciidoctor/core': 2.2.8
+
+  '@antora/asciidoc-loader@3.2.0':
+    dependencies:
+      '@antora/logger': 3.2.0
       '@antora/user-require-helper': 3.0.0
       '@asciidoctor/core': 2.2.8
 
@@ -654,6 +877,13 @@ snapshots:
       '@antora/playbook-builder': 3.1.14
       '@antora/user-require-helper': 3.0.0
       commander: 11.1.0
+
+  '@antora/cli@3.2.0':
+    dependencies:
+      '@antora/logger': 3.2.0
+      '@antora/playbook-builder': 3.2.0
+      '@antora/user-require-helper': 3.0.0
+      commander: 14.0.3
 
   '@antora/content-aggregator@3.1.14':
     dependencies:
@@ -676,6 +906,27 @@ snapshots:
       - bare-abort-controller
       - react-native-b4a
 
+  '@antora/content-aggregator@3.2.0':
+    dependencies:
+      '@antora/expand-path-helper': 3.0.0
+      '@antora/logger': 3.2.0
+      '@antora/user-require-helper': 3.0.0
+      braces: 3.0.3
+      cache-directory: 2.0.0
+      fast-glob: 3.3.3
+      hpagent: 1.2.0
+      isomorphic-git: 1.38.10
+      js-yaml: 5.4.1
+      multi-progress: 4.0.0(progress@2.0.3)
+      picomatch: 4.0.3
+      progress: 2.0.3
+      should-proxy: 1.0.4
+      simple-get: 4.0.1
+      vinyl: 3.0.1
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+
   '@antora/content-classifier@3.1.14':
     dependencies:
       '@antora/asciidoc-loader': 3.1.14
@@ -686,9 +937,23 @@ snapshots:
       - bare-abort-controller
       - react-native-b4a
 
+  '@antora/content-classifier@3.2.0':
+    dependencies:
+      '@antora/asciidoc-loader': 3.2.0
+      '@antora/logger': 3.2.0
+      mime-types: 3.0.2
+      vinyl: 3.0.1
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+
   '@antora/document-converter@3.1.14':
     dependencies:
       '@antora/asciidoc-loader': 3.1.14
+
+  '@antora/document-converter@3.2.0':
+    dependencies:
+      '@antora/asciidoc-loader': 3.2.0
 
   '@antora/expand-path-helper@3.0.0': {}
 
@@ -702,6 +967,16 @@ snapshots:
       - bare-abort-controller
       - react-native-b4a
 
+  '@antora/file-publisher@3.2.0':
+    dependencies:
+      '@antora/expand-path-helper': 3.0.0
+      '@antora/user-require-helper': 3.0.0
+      vinyl: 3.0.1
+      yazl: 3.3.1
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+
   '@antora/logger@3.1.14':
     dependencies:
       '@antora/expand-path-helper': 3.0.0
@@ -709,15 +984,35 @@ snapshots:
       pino-pretty: 11.2.2
       sonic-boom: 4.0.1
 
+  '@antora/logger@3.2.0':
+    dependencies:
+      '@antora/expand-path-helper': 3.0.0
+      pino: 10.3.1
+
+  '@antora/lunr-extension@1.0.0-alpha.13':
+    dependencies:
+      htmlparser2: 9.1.0
+      lunr: 2.3.9
+      lunr-languages: 1.10.0
+
   '@antora/navigation-builder@3.1.14':
     dependencies:
       '@antora/asciidoc-loader': 3.1.14
+
+  '@antora/navigation-builder@3.2.0':
+    dependencies:
+      '@antora/asciidoc-loader': 3.2.0
 
   '@antora/page-composer@3.1.14':
     dependencies:
       '@antora/logger': 3.1.14
       handlebars: 4.7.8
       require-from-string: 2.0.2
+
+  '@antora/page-composer@3.2.0':
+    dependencies:
+      '@antora/logger': 3.2.0
+      handlebars: 4.7.8
 
   '@antora/playbook-builder@3.1.14':
     dependencies:
@@ -726,8 +1021,23 @@ snapshots:
       js-yaml: 4.1.1
       json5: 2.2.3
 
+  '@antora/playbook-builder@3.2.0':
+    dependencies:
+      '@iarna/toml': 2.2.5
+      convict: 6.2.4
+      js-yaml: 5.4.1
+      json5: 2.2.3
+
   '@antora/redirect-producer@3.1.14':
     dependencies:
+      vinyl: 3.0.1
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+
+  '@antora/redirect-producer@3.2.0':
+    dependencies:
+      '@antora/content-classifier': 3.2.0
       vinyl: 3.0.1
     transitivePeerDependencies:
       - bare-abort-controller
@@ -760,6 +1070,26 @@ snapshots:
       - bare-abort-controller
       - react-native-b4a
 
+  '@antora/site-generator@3.2.0':
+    dependencies:
+      '@antora/asciidoc-loader': 3.2.0
+      '@antora/content-aggregator': 3.2.0
+      '@antora/content-classifier': 3.2.0
+      '@antora/document-converter': 3.2.0
+      '@antora/file-publisher': 3.2.0
+      '@antora/logger': 3.2.0
+      '@antora/navigation-builder': 3.2.0
+      '@antora/page-composer': 3.2.0
+      '@antora/playbook-builder': 3.2.0
+      '@antora/redirect-producer': 3.2.0
+      '@antora/site-mapper': 3.2.0
+      '@antora/site-publisher': 3.2.0
+      '@antora/ui-loader': 3.2.0
+      '@antora/user-require-helper': 3.0.0
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+
   '@antora/site-mapper@3.1.14':
     dependencies:
       '@antora/content-classifier': 3.1.14
@@ -768,9 +1098,24 @@ snapshots:
       - bare-abort-controller
       - react-native-b4a
 
+  '@antora/site-mapper@3.2.0':
+    dependencies:
+      '@antora/content-classifier': 3.2.0
+      vinyl: 3.0.1
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+
   '@antora/site-publisher@3.1.14':
     dependencies:
       '@antora/file-publisher': 3.1.14
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+
+  '@antora/site-publisher@3.2.0':
+    dependencies:
+      '@antora/file-publisher': 3.2.0
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
@@ -788,6 +1133,23 @@ snapshots:
       simple-get: 4.0.1
       vinyl: 3.0.1
       yauzl: 3.1.3
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+
+  '@antora/ui-loader@3.2.0':
+    dependencies:
+      '@antora/expand-path-helper': 3.0.0
+      braces: 3.0.3
+      cache-directory: 2.0.0
+      fast-glob: 3.3.3
+      hpagent: 1.2.0
+      js-yaml: 5.4.1
+      picomatch: 4.0.3
+      should-proxy: 1.0.4
+      simple-get: 4.0.1
+      vinyl: 3.0.1
+      yauzl: 3.4.0
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
@@ -815,11 +1177,30 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.20.1
 
+  '@pinojs/redact@0.4.0': {}
+
   abort-controller@3.0.0:
     dependencies:
       event-target-shim: 5.0.1
 
+  antora@3.2.0:
+    dependencies:
+      '@antora/cli': 3.2.0
+      '@antora/site-generator': 3.2.0
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - react-native-b4a
+
   argparse@2.0.1: {}
+
+  asciidoctor-kroki@0.18.1(@asciidoctor/core@2.2.8):
+    dependencies:
+      '@asciidoctor/core': 2.2.8
+      json5: 2.2.3
+      mkdirp: 2.1.3
+      pako: 2.1.0
+      rusha: 0.8.14
+      unxhr: 1.2.0
 
   asciidoctor-opal-runtime@0.3.3:
     dependencies:
@@ -852,6 +1233,8 @@ snapshots:
       fill-range: 7.1.1
 
   buffer-crc32@0.2.13: {}
+
+  buffer-crc32@1.0.0: {}
 
   buffer@6.0.3:
     dependencies:
@@ -887,6 +1270,8 @@ snapshots:
 
   commander@11.1.0: {}
 
+  commander@14.0.3: {}
+
   concat-map@0.0.1: {}
 
   convict@6.2.4:
@@ -910,6 +1295,24 @@ snapshots:
 
   diff3@0.0.3: {}
 
+  dom-serializer@2.0.0:
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      entities: 4.5.0
+
+  domelementtype@2.3.0: {}
+
+  domhandler@5.0.3:
+    dependencies:
+      domelementtype: 2.3.0
+
+  domutils@3.2.2:
+    dependencies:
+      dom-serializer: 2.0.0
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+
   dunder-proto@1.0.1:
     dependencies:
       call-bind-apply-helpers: 1.0.2
@@ -919,6 +1322,8 @@ snapshots:
   end-of-stream@1.4.5:
     dependencies:
       once: 1.4.0
+
+  entities@4.5.0: {}
 
   es-define-property@1.0.1: {}
 
@@ -1030,6 +1435,13 @@ snapshots:
 
   hpagent@1.2.0: {}
 
+  htmlparser2@9.1.0:
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      domutils: 3.2.2
+      entities: 4.5.0
+
   ieee754@1.2.1: {}
 
   ignore@5.3.2: {}
@@ -1071,15 +1483,37 @@ snapshots:
       sha.js: 2.4.12
       simple-get: 4.0.1
 
+  isomorphic-git@1.38.10:
+    dependencies:
+      async-lock: 1.4.1
+      clean-git-ref: 2.0.1
+      crc-32: 1.2.2
+      diff3: 0.0.3
+      ignore: 5.3.2
+      minimisted: 2.0.1
+      pako: 1.0.11
+      pify: 4.0.1
+      readable-stream: 4.7.0
+      sha.js: 2.4.12
+      simple-get: 4.0.1
+
   joycon@3.1.1: {}
 
   js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
 
+  js-yaml@5.4.1:
+    dependencies:
+      argparse: 2.0.1
+
   json5@2.2.3: {}
 
   lodash.clonedeep@4.5.0: {}
+
+  lunr-languages@1.10.0: {}
+
+  lunr@2.3.9: {}
 
   math-intrinsics@1.1.0: {}
 
@@ -1092,9 +1526,15 @@ snapshots:
 
   mime-db@1.52.0: {}
 
+  mime-db@1.54.0: {}
+
   mime-types@2.1.35:
     dependencies:
       mime-db: 1.52.0
+
+  mime-types@3.0.2:
+    dependencies:
+      mime-db: 1.54.0
 
   mimic-response@3.1.0: {}
 
@@ -1107,6 +1547,8 @@ snapshots:
   minimisted@2.0.1:
     dependencies:
       minimist: 1.2.8
+
+  mkdirp@2.1.3: {}
 
   multi-progress@4.0.0(progress@2.0.3):
     dependencies:
@@ -1122,6 +1564,8 @@ snapshots:
 
   pako@1.0.11: {}
 
+  pako@2.1.0: {}
+
   path-is-absolute@1.0.1: {}
 
   pend@1.2.0: {}
@@ -1135,6 +1579,10 @@ snapshots:
   pino-abstract-transport@1.2.0:
     dependencies:
       readable-stream: 4.7.0
+      split2: 4.2.0
+
+  pino-abstract-transport@3.0.0:
+    dependencies:
       split2: 4.2.0
 
   pino-pretty@11.2.2:
@@ -1156,6 +1604,20 @@ snapshots:
 
   pino-std-serializers@7.1.0: {}
 
+  pino@10.3.1:
+    dependencies:
+      '@pinojs/redact': 0.4.0
+      atomic-sleep: 1.0.0
+      on-exit-leak-free: 2.1.2
+      pino-abstract-transport: 3.0.0
+      pino-std-serializers: 7.1.0
+      process-warning: 5.1.0
+      quick-format-unescaped: 4.0.4
+      real-require: 0.2.0
+      safe-stable-stringify: 2.5.0
+      sonic-boom: 4.0.1
+      thread-stream: 4.2.0
+
   pino@9.2.0:
     dependencies:
       atomic-sleep: 1.0.0
@@ -1173,6 +1635,8 @@ snapshots:
   possible-typed-array-names@1.1.0: {}
 
   process-warning@3.0.0: {}
+
+  process-warning@5.1.0: {}
 
   process@0.11.10: {}
 
@@ -1203,6 +1667,8 @@ snapshots:
 
   real-require@0.2.0: {}
 
+  real-require@1.0.0: {}
+
   remove-trailing-separator@1.1.0: {}
 
   replace-ext@2.0.0: {}
@@ -1214,6 +1680,8 @@ snapshots:
   run-parallel@1.2.0:
     dependencies:
       queue-microtask: 1.2.3
+
+  rusha@0.8.14: {}
 
   safe-buffer@5.2.1: {}
 
@@ -1286,6 +1754,10 @@ snapshots:
     dependencies:
       real-require: 0.2.0
 
+  thread-stream@4.2.0:
+    dependencies:
+      real-require: 1.0.0
+
   to-buffer@1.2.2:
     dependencies:
       isarray: 2.0.5
@@ -1306,6 +1778,8 @@ snapshots:
     optional: true
 
   unxhr@1.0.1: {}
+
+  unxhr@1.2.0: {}
 
   util-deprecate@1.0.2: {}
 
@@ -1342,6 +1816,14 @@ snapshots:
       buffer-crc32: 0.2.13
       pend: 1.2.0
 
+  yauzl@3.4.0:
+    dependencies:
+      pend: 1.2.0
+
   yazl@2.5.1:
     dependencies:
       buffer-crc32: 0.2.13
+
+  yazl@3.3.1:
+    dependencies:
+      buffer-crc32: 1.0.0

@@ -1,0 +1,15 @@
+= Changelog
+:description: Ship timeline for the Linx Photos documentation hub (repository face).
+
+Reader-facing Antora timeline: link:https://docs.linx.photos/photo-service/changelog/[Changelog on the docs site].
+
+== 2026-09-09 — Valentus v2 + Facto
+
+* Migrate UI bundle from Valentus `v1` to rolling `v2`.
+* Wire Facto essentials: Lunr, Kroki, page-context, page-edit, build-stack.
+* Thin supplemental UI to brand tokens + footer; drop forked header and vendored math (now in Valentus).
+* Enable folder URLs (`indexify`) and page metadata on hub articles.
+
+== 2026-08-12 — KaTeX stem math
+
+* Enable `stem: latexmath` and KaTeX plumbing on every docs page.

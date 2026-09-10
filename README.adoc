@@ -41,7 +41,13 @@ endif::[]
 
 == About The Project
 
-Documentation hub for LinxPhotos tools, built with Antora and Handlebars-based supplemental UI.
+Documentation hub for LinxPhotos tools, built with Antora, Valentus theme v2, and the Facto compose pack (Lunr, STEM, Kroki, page-context).
+
+Published site: https://docs.linx.photos/
+
+== Changelog
+
+See link:CHANGELOG.adoc[CHANGELOG.adoc] and the Antora xref page on the published site.
 
 ifdef::env-github[]
 ++++
