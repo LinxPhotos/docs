@@ -9,15 +9,13 @@
   },
   "dependencies": {
     "@antora-supplemental/build-stack": "github:antora-supplemental/build-stack#main",
-    "@antora-supplemental/page-context": "github:antora-supplemental/page-context#main",
-    "@antora-supplemental/page-edit": "github:antora-supplemental/page-edit#main",
+    "@antora-supplemental/page-context": "github:antora-supplemental/page-context#v0.6.3",
+    "@antora-supplemental/page-edit": "github:antora-supplemental/page-edit#v0.2.1",
     "@antora/lunr-extension": "^1.0.0-alpha.13",
     "asciidoctor-kroki": "^0.18.1"
   },
   "devDependencies": {
-    "@antora/cli": "^3.1.14",
-    "@antora/site-generator-default": "^3.1.14",
-    "antora": "^3.1.14"
+    "antora": "^3.2.0"
   },
   "packageManager": "pnpm@10.28.1"
 }

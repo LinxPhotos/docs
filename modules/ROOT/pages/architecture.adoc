@@ -6,6 +6,7 @@
 :page-last-author: Cursor agent on behalf of Ryan Johnson
 :page-last-edited: 2026-09-09
 :page-diataxis: explanation
+:page-keywords: architecture, visual join, turso
 
 ifndef::page-context-active[]
 [.page-context.page-context-lead]

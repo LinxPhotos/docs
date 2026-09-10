@@ -3,6 +3,12 @@
 
 Reader-facing Antora timeline: link:https://docs.linx.photos/photo-service/changelog/[Changelog on the docs site].
 
+== 2026-09-10 — Refresh Facto extension pins
+
+* Pin `page-context` to `v0.6.3` and `page-edit` to `v0.2.1` (tagged releases).
+* Align Antora meta package to `^3.2.0`. Keep `asciidoctor-kroki` on `^0.18.1` (1.0.x needs Asciidoctor 4; Antora 3 still ships 2.x).
+* Register `page-context/antora` keyword listing pages under `/photo-service/keywords/`.
+
 == 2026-09-10 — Rename hub repo to docs
 
 * GitHub repository is `LinxPhotos/docs` (was `docs.linx.photos`).

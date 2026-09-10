@@ -21,6 +21,9 @@ antora:
     - '@antora/lunr-extension'
     - '@antora-supplemental/build-stack'
     - '@antora-supplemental/page-edit'
+    - require: '@antora-supplemental/page-context/antora'
+      component: photo-service
+      path: keywords
 
 content:
   sources:
@@ -49,3 +52,4 @@ asciidoc:
     kroki-server-url: https://kroki.io
     kroki-fetch-diagram: true
     page-context-active: ''
+    page-context-keyword-base: '/photo-service/keywords'
