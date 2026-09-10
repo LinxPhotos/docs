@@ -5,7 +5,7 @@
   "description": "Documentation hub for Linx Photos (Antora + Valentus v2 + Facto)",
   "scripts": {
     "dev": "antora antora-playbook.yml",
-    "build": "antora --fetch antora-playbook.yml && copy supplemental-ui\\img\\favicon.ico public\\docs\\favicon.ico"
+    "build": "antora --fetch antora-playbook.yml && node -e \"require('fs').copyFileSync('supplemental-ui/img/favicon.ico','public/docs/favicon.ico')\""
   },
   "dependencies": {
     "@antora-supplemental/build-stack": "github:antora-supplemental/build-stack#main",
