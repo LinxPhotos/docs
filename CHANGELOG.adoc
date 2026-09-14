@@ -3,9 +3,13 @@
 
 Reader-facing Antora timeline: link:https://docs.linx.photos/photo-service/changelog/[Changelog on the docs site].
 
+== 2026-09-14 -- page-context 0.6.6 author spacing
+
+* Pin `@antora-supplemental/page-context` to `v0.6.6` so the lead/footer author name, avatar, and `via` stay spaced.
+
 == Unreleased
 
-* Pin `page-context` to `v0.6.4` (empty lead shell on component home) and `page-edit` to `v0.2.3` (never prepend View|Edit before `<!DOCTYPE>`). Fixes View|Edit above the top navbar on the hub start page.
+* Pin `page-context` to `v0.6.6` (author spacing) and `page-edit` to `v0.2.3` (never prepend View|Edit before `<!DOCTYPE>`). Fixes View|Edit above the top navbar on the hub start page.
 * Rebuild after Valentus rolling `v2` picks up the restored home icon chip + Version kicker label (when that UI bundle is released).
 
 == 2026-09-10 — Refresh Facto extension pins
