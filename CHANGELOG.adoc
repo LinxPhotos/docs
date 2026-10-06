@@ -15,6 +15,7 @@ Reader-facing Antora timeline: link:https://docs.linx.photos/photo-service/chang
 
 * Pin `page-context` to `v0.6.6` (author spacing) and `page-edit` to `v0.2.3` (never prepend View|Edit before `<!DOCTYPE>`). Fixes View|Edit above the top navbar on the hub start page.
 * Rebuild after Valentus rolling `v2` picks up the restored home icon chip + Version kicker label (when that UI bundle is released).
+* Lockfile refresh so Antora and `asciidoctor-kroki` resolve `@asciidoctor/core` 2.2.9; its Opal runtime (0.3.4) uses `fast-glob` instead of the deprecated `glob@7` and `inflight`.
 
 == 2026-09-10 — Refresh Facto extension pins
 
